@@ -6,26 +6,22 @@ const Home = (): JSX.Element => {
 
   return (
   <div className="pageLayout">
-    <p>To See example usage click on one of the Links above.</p>
+    <p>Visible from Matomo</p>
+    <p data-matomo-mask>Hidden from Matomo</p>
     <button onClick={() => setOpen(true)}>Open bottom sheet</button>
     <BottomSheet open={open} header={
         <Fragment>
-          <div onClick={() => setOpen(false)}>
-            <button onClick={() => setOpen(false)}>Close Sheet</button>
-          </div>
+          <p>Visible by Matomo</p>
+          <p data-matomo-mask>Hidden from Matomo</p>
           <button onClick={() => setOpen(false)}>Close Sheet</button>
         </Fragment>
       }>
-        <div>
-       
-        <button disabled={false} onClick={(e) => setOpen(false)}>Close Sheet</button>
-
-    <button onClick={() => setOpen(false)}>Close Sheet</button>
-  <input type="radio" name="some-name-1" />
-    </div>
-    
-    
-    
+        {/* BottomSheet body */}
+      <div>
+        <p>Visible from Matomo</p>
+        <p data-matomo-mask>Hidden from Matomo</p>
+        <button onClick={() => setOpen(false)}>Close Sheet</button>
+      </div>
     </BottomSheet>
   </div>
 )}

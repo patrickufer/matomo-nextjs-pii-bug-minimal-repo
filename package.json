@@ -10,6 +10,7 @@
     "prettier": "prettier --write '**/*.{ts,tsx}'"
   },
   "dependencies": {
+    "@socialgouv/matomo-next": "^1.2.2",
     "next": "11.0.1",
     "react": "16.14.0",
     "react-dom": "16.14.0",
