@@ -19,6 +19,10 @@ export default function Application({ Component, pageProps }: AppProps) {
         <Head>
           <title>Matomo PII bug + NextJS minimal repo</title>
           <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+          {/* PWA Manifest */}
+          <link rel='manifest' href='/manifest.json' />
+          <link rel='shortcut icon' href='/icons/favicon.ico' />
         </Head>
         <Component {...pageProps} />
       </Fragment>

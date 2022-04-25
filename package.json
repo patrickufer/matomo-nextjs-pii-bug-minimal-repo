@@ -13,8 +13,7 @@
     "@socialgouv/matomo-next": "^1.2.2",
     "next": "11.0.1",
     "react": "16.14.0",
-    "react-dom": "16.14.0",
-    "react-spring-bottom-sheet": "3.4.0"
+    "react-dom": "16.14.0"
   },
   "devDependencies": {
     "@types/node": "^16.11.12",
